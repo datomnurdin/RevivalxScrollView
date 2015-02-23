@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scroller: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        scroller.contentSize = CGSizeMake(400, 2300)
+        scroller.showsHorizontalScrollIndicator = true
+        scroller.scrollEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
